@@ -5,63 +5,119 @@
 body {
   margin: 0;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  background: #f5f7fb;
+  background: #f8fafc;
   color: #1f2937;
   line-height: 1.7;
 }
 
+/* HERO */
 .hero {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: linear-gradient(135deg, #020617, #0f172a);
   color: white;
+  padding: 110px 20px;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: auto;
   text-align: center;
-  padding: 90px 20px;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-bottom: 10px;
 }
 
-.tagline {
-  font-size: 1.1rem;
+.subtitle {
+  font-size: 1.2rem;
+  color: #93c5fd;
+}
+
+.hero-desc {
+  margin-top: 15px;
+  font-size: 1.05rem;
   opacity: 0.9;
 }
 
+.links {
+  margin-top: 30px;
+}
+
 .links a {
-  margin: 0 10px;
+  margin: 0 12px;
   color: #93c5fd;
   text-decoration: none;
   font-weight: 600;
 }
 
+.resume-btn {
+  border: 1px solid #93c5fd;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* SECTIONS */
 section {
   max-width: 1000px;
   margin: auto;
-  padding: 50px 20px;
+  padding: 70px 20px;
 }
 
 h2 {
   border-left: 5px solid #3b82f6;
-  padding-left: 12px;
-  margin-bottom: 25px;
+  padding-left: 14px;
+  margin-bottom: 30px;
 }
 
+h3 {
+  margin-top: 0;
+}
+
+/* CARDS */
 .card {
   background: white;
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  padding: 28px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
-.skills li,
-.experience li {
-  margin-bottom: 10px;
+.meta {
+  font-size: 0.9rem;
+  color: #64748b;
 }
 
+.card ul {
+  padding-left: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.skills-grid h4 {
+  margin-bottom: 8px;
+}
+
+/* TIMELINE */
+.timeline li {
+  margin-bottom: 12px;
+}
+
+/* FOOTER */
 footer {
+  background: #020617;
+  color: #cbd5f5;
   text-align: center;
   padding: 30px;
-  background: #0f172a;
-  color: #cbd5f5;
 }
