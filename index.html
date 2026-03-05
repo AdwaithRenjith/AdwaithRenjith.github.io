@@ -5,65 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Adwaith Renjith | AI Research & Software Engineering</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- Animated Background -->
+<div class="bg-animation"></div>
+
 <!-- HERO -->
 <header class="hero">
   <div class="hero-content">
-    <h1>Adwaith Renjith</h1>
+    <div class="glitch-wrapper">
+      <h1 class="glitch" data-text="Adwaith Renjith">Adwaith Renjith</h1>
+    </div>
     <p class="subtitle">
-      Honors Computer Science Student · AI Researcher · Full-Stack Engineer
+      <span class="highlight">Honors Computer Science Student</span> · AI Researcher · Full-Stack Engineer
     </p>
     <p class="hero-desc">
       Researching efficient neural networks and building scalable, real-world systems
       at Oregon State University.
     </p>
     <div class="links">
-      <a href="https://github.com/adwaithrenjith" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/adwaith-renjith/" target="_blank">LinkedIn</a>
-      <a href="mailto:adwaithr2006@gmail.com" target="_blank">Email</a>
+      <a href="https://github.com/adwaithrenjith" target="_blank" class="social-link">
+        <span class="link-text">GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/adwaith-renjith/" target="_blank" class="social-link">
+        <span class="link-text">LinkedIn</span>
+      </a>
+      <a href="mailto:adwaithr2006@gmail.com" target="_blank" class="social-link">
+        <span class="link-text">Email</span>
+      </a>
       <!-- <a href="Resume_v6.3.pdf" target="_blank" class="resume-btn">Resume</a> -->
     </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-arrow">↓</div>
   </div>
 </header>
 
 <!-- ABOUT -->
+<section class="about-section">
+  <h2><span class="section-number">01.</span> About</h2>
+  <div class="about-content">
+    <div class="glass-card">
+      <p>
+        I'm an Honors Computer Science student at <span class="highlight-text">Oregon State University</span> (GPA: 4.0),
+        with minors in Business Administration and Finance. I work as a Research Assistant
+        at OSU's STAR Lab, where I focus on improving the efficiency and parameter
+        optimization of large neural networks, including Kolmogorov-Arnold Networks
+        and Transformers.
+      </p>
+      <p>
+        My interests sit at the intersection of <span class="highlight-text">machine learning research</span>, systems
+        optimization, and <span class="highlight-text">full-stack software engineering</span>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
 <section>
-  <h2>About</h2>
-  <p>
-    I’m an Honors Computer Science student at Oregon State University (GPA: 4.0),
-    with minors in Business Administration and Finance. I work as a Research Assistant
-    at OSU’s STAR Lab, where I focus on improving the efficiency and parameter
-    optimization of large neural networks, including Kolmogorov-Arnold Networks
-    and Transformers.
-  </p>
-  <p>
-    My interests sit at the intersection of machine learning research, systems
-    optimization, and full-stack software engineering.
-  </p>
+  <h2><span class="section-number">02.</span> Leadership & Experience</h2>
+  <div class="experience-grid">
+    <div class="experience-item">
+      <div class="experience-icon">🔬</div>
+      <strong>Research Assistant</strong>
+      <a href="https://web.engr.oregonstate.edu/~chenliz/research.html" target="_blank" class="link-accent">STAR Lab</a> — OSU
+    </div>
+    <div class="experience-item">
+      <div class="experience-icon">💼</div>
+      <strong>Finance Chair</strong>
+      <a href="https://pmc-website-nu.vercel.app/" target="_blank" class="link-accent">Product Management Club</a>, OSU
+    </div>
+    <div class="experience-item">
+      <div class="experience-icon">🎓</div>
+      <strong>Vice Chair</strong>
+      Honors College Student Association
+    </div>
+    <div class="experience-item">
+      <div class="experience-icon">💻</div>
+      <strong>Developer Intern</strong>
+      BeaverHacks
+    </div>
+  </div>
 </section>
 
 <!-- RESEARCH -->
 <section>
-  <h2>Research</h2>
+  <h2><span class="section-number">03.</span> Research</h2>
 
-  <div class="card">
+  <div class="card featured-card">
+    <div class="card-badge">Featured</div>
     <h3>MetaCluster: Deep Compression of Kolmogorov-Arnold Networks</h3>
-    <span class="meta">STAR Lab · 2025 · ICLR 2026 Submission</span>
+    <span class="meta"><span class="tag">STAR Lab</span> <span class="tag">2025</span> <span class="tag">ICLR 2026 Submission</span></span>
     <ul>
       <li>Proposed clustering-based parameter sharing for KAN MetaNet weights</li>
       <li>Applied K-Means clustering using PyTorch and scikit-learn</li>
-      <li>Achieved up to <strong>80× parameter storage reduction</strong> with no accuracy loss</li>
+      <li>Achieved up to <strong class="highlight-text">80× parameter storage reduction</strong> with no accuracy loss</li>
       <li>Implemented and evaluated in an HPC environment</li>
     </ul>
-    <a href="https://arxiv.org/abs/2510.19105" target="_blank">View arXiv →</a>
+    <a href="https://arxiv.org/abs/2510.19105" target="_blank" class="card-link">View arXiv →</a>
   </div>
 
   <div class="card">
     <h3>Clustering Activation Functions in KAN Transformers</h3>
-    <span class="meta">Poster Presentation · Spring 2025</span>
+    <span class="meta"><span class="tag">Poster Presentation</span> <span class="tag">Spring 2025</span></span>
     <ul>
       <li>Designed a novel distance metric for activation function similarity</li>
       <li>Benchmarked K-Means and K-Medoids clustering methods</li>
@@ -72,80 +121,126 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- SKILLS -->
 <section>
-  <h2>Projects</h2>
+  <h2><span class="section-number">04.</span> Skills</h2>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Vision Cursor</h3>
-      <p class="meta">Python · OpenCV · MediaPipe</p>
-      <p>
+  <div class="skills-grid">
+    <div class="skill-category">
+      <div class="skill-icon">⚡</div>
+      <h4>Languages</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">R</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-icon">🌐</div>
+      <h4>Web & Backend</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Next.js</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Express</span>
+        <span class="skill-tag">Flask</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-icon">🤖</div>
+      <h4>AI / ML</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">scikit-learn</span>
+        <span class="skill-tag">Computer Vision</span>
+        <span class="skill-tag">safetensors</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-icon">⚙️</div>
+      <h4>Systems</h4>
+      <div class="skill-tags">
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Git/GitHub</span>
+        <span class="skill-tag">HPC</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-section">
+  <h2><span class="section-number">05.</span> Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Vision Cursor</h3>
+        <div class="project-icon">👁️</div>
+      </div>
+      <p class="project-description">
         Real-time gesture-controlled cursor with finger tracking and click/drag
         recognition for hands-free interaction.
       </p>
+      <div class="tech-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">OpenCV</span>
+        <span class="tech-tag">MediaPipe</span>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>CareSync</h3>
-      <p class="meta">React · Node.js · SQLite</p>
-      <p>
+    <div class="project-card">
+      <div class="project-header">
+        <h3>CareSync</h3>
+        <div class="project-icon">🏥</div>
+      </div>
+      <p class="project-description">
         Family health tracker with prescription management, appointment reminders,
         and JWT-secured authentication.
       </p>
+      <div class="tech-tags">
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">SQLite</span>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>AI Quiz App</h3>
-      <p class="meta">Node.js · Gemini API · Groq SDK</p>
-      <p>
+    <div class="project-card">
+      <div class="project-header">
+        <h3>AI Quiz App</h3>
+        <div class="project-icon">🧠</div>
+      </div>
+      <p class="project-description">
         Hackathon-built quiz platform generating real-time math problems using LLMs.
       </p>
+      <div class="tech-tags">
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">Gemini API</span>
+        <span class="tech-tag">Groq SDK</span>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>DocuVault</h3>
-      <p class="meta">Flask · SQLite · Security</p>
-      <p>
+    <div class="project-card">
+      <div class="project-header">
+        <h3>DocuVault</h3>
+        <div class="project-icon">🔐</div>
+      </div>
+      <p class="project-description">
         Secure document management system with role-based access and CSRF protection.
       </p>
+      <div class="tech-tags">
+        <span class="tech-tag">Flask</span>
+        <span class="tech-tag">SQLite</span>
+        <span class="tech-tag">Security</span>
+      </div>
     </div>
   </div>
-</section>
-
-<!-- SKILLS -->
-<section>
-  <h2>Skills</h2>
-
-  <div class="skills-grid">
-    <div>
-      <h4>Languages</h4>
-      <p>Python, C++, C, Java, JavaScript, TypeScript, R</p>
-    </div>
-    <div>
-      <h4>Web & Backend</h4>
-      <p>React, Next.js, Node.js, Express, Flask, HTML, CSS</p>
-    </div>
-    <div>
-      <h4>AI / ML</h4>
-      <p>PyTorch, scikit-learn, Computer Vision, safetensors</p>
-    </div>
-    <div>
-      <h4>Systems</h4>
-      <p>SQL, Git/GitHub, HPC</p>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section>
-  <h2>Leadership & Experience</h2>
-  <ul class="timeline">
-    <li><strong>Research Assistant</strong> <a href="https://web.engr.oregonstate.edu/~chenliz/research.html" target="_blank">STAR Lab</a> — OSU</li>
-    <li><strong>Finance Chair</strong> — <a href="https://pmc-website-nu.vercel.app/" target="_blank">Product Management Club</a>, OSU</li>
-    <li><strong>Vice Chair</strong> — Honors College Student Association</li>
-    <li><strong>Developer Intern</strong> — BeaverHacks</li>
-  </ul>
 </section>
 
 <!-- FOOTER -->
