@@ -200,100 +200,93 @@
 
   <div class="projects-grid">
     <div class="project-card">
-      <!-- <div class="project-image">
-        <img src="images/vision-cursor.gif" alt="Vision Cursor Demo" loading="lazy">
-      </div> -->
+      <div class="project-header">
+        <h3>Cortex</h3>
+        <div class="project-icon">🧭</div>
+      </div>
+      <p class="project-description">Autonomous closed-loop AI system (observe → reason → act → verify). Engineered a production‑deployed closed‑loop agent that unified GitHub, logs, analytics, Discord, and documentation into a real‑time decision pipeline. Implemented a constraint‑driven "promises" framework for safe execution and automated remediation. 2nd Place, BeaverHacks (Agent Infrastructure Track).</p>
+      <div class="tech-tags">
+        <span class="tech-tag">Agents</span>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">Realtime</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3>LiftLog</h3>
+        <div class="project-icon">🏋️</div>
+      </div>
+      <p class="project-description">Real‑time workout tracker built with React and TypeScript; implemented real‑time updates and persistent storage using MongoDB within an Agile Scrum team.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">TypeScript</span>
+        <span class="tech-tag">MongoDB</span>
+      </div>
+    </div>
+
+    <div class="project-card">
       <div class="project-header">
         <h3>Vision Cursor</h3>
         <div class="project-icon">👁️</div>
       </div>
-      <p class="project-description">
-        Real-time gesture-controlled cursor with finger tracking and click/drag
-        recognition for hands-free interaction.
-      </p>
+      <p class="project-description">Computer vision gesture mouse using OpenCV and MediaPipe for finger tracking and gesture‑based click/drag interactions enabling hands‑free control.</p>
       <div class="tech-tags">
         <span class="tech-tag">Python</span>
         <span class="tech-tag">OpenCV</span>
         <span class="tech-tag">MediaPipe</span>
       </div>
-      <div class="project-links">
-        <!-- <a href="https://github.com/adwaithrenjith/vision-cursor" target="_blank" class="project-link-btn">
-          <span>View Code</span>
-        </a> -->
-        <!-- <a href="#" target="_blank" class="project-link-btn primary">
-          <span>Live Demo</span>
-        </a> -->
-      </div>
     </div>
 
     <div class="project-card">
-      <!-- <div class="project-image">
-        <img src="images/caresync.png" alt="CareSync Dashboard" loading="lazy">
-      </div> -->
       <div class="project-header">
         <h3>CareSync</h3>
         <div class="project-icon">🏥</div>
       </div>
-      <p class="project-description">
-        Family health tracker with prescription management, appointment reminders,
-        and JWT-secured authentication.
-      </p>
+      <p class="project-description">Family health tracker with prescription and appointment tracking, medicine‑stock monitoring, and smart refill/visit alerts secured by JWT authentication.</p>
       <div class="tech-tags">
         <span class="tech-tag">React</span>
         <span class="tech-tag">Node.js</span>
         <span class="tech-tag">SQLite</span>
       </div>
-      <div class="project-links">
-        <!-- TODO: Add your GitHub repository URLs -->
-        <!-- <a href="https://github.com/adwaithrenjith/caresync" target="_blank" class="project-link-btn">
-          <span>View Code</span>
-        </a> -->
-      </div>
     </div>
 
     <div class="project-card">
-      <!-- <div class="project-image">
-        <img src="images/ai-quiz-app.png" alt="AI Quiz App" loading="lazy">
-      </div> -->
       <div class="project-header">
         <h3>AI Quiz App</h3>
         <div class="project-icon">🧠</div>
       </div>
-      <p class="project-description">
-        Hackathon-built quiz platform generating real-time math problems using LLMs.
-      </p>
+      <p class="project-description">24‑hour hackathon quiz app that integrates Gemini API and Groq SDK to generate and validate math questions in real time.</p>
       <div class="tech-tags">
         <span class="tech-tag">Node.js</span>
         <span class="tech-tag">Gemini API</span>
         <span class="tech-tag">Groq SDK</span>
       </div>
-      <div class="project-links">
-        <!-- <a href="https://github.com/adwaithrenjith/ai-quiz-app" target="_blank" class="project-link-btn">
-          <span>View Code</span>
-        </a> -->
-      </div>
     </div>
 
     <div class="project-card">
-      <!-- <div class="project-image">
-        <img src="images/docuvault.png" alt="DocuVault" loading="lazy">
-      </div> -->
       <div class="project-header">
         <h3>DocuVault</h3>
         <div class="project-icon">🔐</div>
       </div>
-      <p class="project-description">
-        Secure document management system with role-based access and CSRF protection.
-      </p>
+      <p class="project-description">Household document storage system with role‑based access, bcrypt hashing, CSRF protection, and secure file handling.</p>
       <div class="tech-tags">
         <span class="tech-tag">Flask</span>
         <span class="tech-tag">SQLite</span>
         <span class="tech-tag">Security</span>
       </div>
-      <div class="project-links">
-        <!-- <a href="https://github.com/adwaithrenjith/docuvault" target="_blank" class="project-link-btn">
-          <span>View Code</span>
-        </a> -->
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3>FinTrack</h3>
+        <div class="project-icon">💰</div>
+      </div>
+      <p class="project-description">Personal expense tracker with categorization and visualization built using Python, Flask, SQLite, and Bootstrap.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Flask</span>
+        <span class="tech-tag">SQLite</span>
       </div>
     </div>
   </div>
@@ -359,22 +352,48 @@
     <div class="experience-item">
       <div class="experience-icon">🔬</div>
       <strong>Research Assistant</strong>
-      <a href="https://web.engr.oregonstate.edu/~chenliz/research.html" target="_blank" class="link-accent">STAR Lab</a> — OSU
+      <div class="experience-meta">STAR Lab — Oregon State University <span class="experience-date">(Nov 2024 – Present)</span></div>
+      <ul class="experience-bullets">
+        <li>Conducting research on LLM efficiency and parameter compression using Python, PyTorch, scikit-learn, and TensorFlow.</li>
+        <li>Developed clustering-based techniques for parameter sharing and evaluated model performance using quantitative and qualitative metrics.</li>
+      </ul>
     </div>
+
+    <div class="experience-item">
+      <div class="experience-icon">🧑‍🏫</div>
+      <strong>Undergraduate Learning Assistant (EECS & ENGR)</strong>
+      <div class="experience-meta">Oregon State University <span class="experience-date">(Mar 2026 – Present)</span></div>
+      <ul class="experience-bullets">
+        <li>Supported instruction for CS 261 and ENGR 103 via office hours and lab guidance.</li>
+        <li>Mentored students in C/C++/Python on algorithm development, debugging, and code review.</li>
+      </ul>
+    </div>
+
     <div class="experience-item">
       <div class="experience-icon">💼</div>
       <strong>Finance Chair</strong>
-      <a href="https://pmc-website-nu.vercel.app/" target="_blank" class="link-accent">Product Management Club</a>, OSU
+      <div class="experience-meta">Product Management Club — Oregon State University <span class="experience-date">(Jun 2025 – Present)</span></div>
+      <ul class="experience-bullets">
+        <li>Managed budgeting, fund allocation, and sponsorship acquisition to support club events.</li>
+      </ul>
     </div>
+
     <div class="experience-item">
-      <div class="experience-icon">🎓</div>
-      <strong>Vice Chair</strong>
-      Honors College Student Association
+      <div class="experience-icon">🎤</div>
+      <strong>Vice Chair, Professional Development</strong>
+      <div class="experience-meta">Honors College Student Association <span class="experience-date">(Oct 2025 – Present)</span></div>
+      <ul class="experience-bullets">
+        <li>Planned and organized professional development events for Honors College students.</li>
+      </ul>
     </div>
+
     <div class="experience-item">
       <div class="experience-icon">💻</div>
       <strong>Developer Intern</strong>
-      BeaverHacks
+      <div class="experience-meta">BeaverHacks <span class="experience-date">(Jun 2025 – Sep 2025)</span></div>
+      <ul class="experience-bullets">
+        <li>Built a full-stack web app for hackathon registration using Next.js, Tailwind CSS, and Prisma with real-time updates and authentication.</li>
+      </ul>
     </div>
   </div>
 </section>
