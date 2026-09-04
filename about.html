@@ -1,95 +1,103 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About — Adwaith Renjith</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Adwaith Renjith</title>
+  <meta name="description" content="Education, experience, research, and activities of Adwaith Renjith.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="site-shell">
-<nav class="navbar">
-<a class="brand" href="index.html">
-<span>AR</span> Adwaith Renjith</a>
-<button class="menu-toggle">Menu</button>
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a class="active" href="about.html">About me</a>
-<a href="work.html">Work & info</a>
-<a class="nav-cta" href="mailto:adwaithr2006@gmail.com">Let's talk <b>↗</b>
-</a>
-</div>
-</nav>
-<main>
-<section class="inner-hero page-width">
-<span class="eyebrow">02 / About me</span>
-<h1>More than the work<br>
-<em>behind the work.</em>
-</h1>
-<p>A few things about the person behind the research, late-night prototypes, and very many browser tabs.</p>
-</section>
-<section class="page-width content-grid">
-<div class="section-marker">01 <span>My story</span>
-</div>
-<div>
-<h2>I'm drawn to the space between theory and reality.</h2>
-<p>I'm an Honors Computer Science student at Oregon State University, with minors in Business Administration and Finance. My curiosity has led me from neural network optimization at OSU's STAR Lab to building full-stack products with real people and real constraints.</p>
-<p>I care about details, clear communication, and making technical work useful. Outside of code, I enjoy learning how products come together and finding new ways to turn ambitious ideas into something people can actually use.</p>
-</div>
-</section>
-<section class="page-width portrait-grid">
-<div class="photo" role="img" aria-label="A workspace with a laptop">
-</div>
-<div class="photo" role="img" aria-label="A team collaborating">
-</div>
-</section>
-<section class="page-width content-grid">
-<div class="section-marker">02 <span>Journey so far</span>
-</div>
-<div class="timeline">
-<div class="timeline-item">
-<span class="label">Nov 2024 — now</span>
-<div>
-<h3>Research Assistant Â· OSU STAR Lab</h3>
-<p>Exploring efficient neural networks, KANs, Transformers, and parameter optimization in an HPC environment.</p>
-</div>
-</div>
-<div class="timeline-item">
-<span class="label">2025 — now</span>
-<div>
-<h3>Honors Computer Science Â· Oregon State University</h3>
-<p>Studying computer science with minors in Business Administration and Finance. GPA: 4.0.</p>
-</div>
-</div>
-<div class="timeline-item">
-<span class="label">A little bit of everything</span>
-<div>
-<h3>Builder, teammate, lifelong learner</h3>
-<p>From product management and teaching to hackathons and independent projects.</p>
-</div>
-</div>
-</div>
-</section>
-</main>
-<footer class="footer page-width">
-<div>
-<span class="brand-mark">AR</span>
-<p>Researching. Building. Learning.</p>
-</div>
-<div class="footer-links">
-<a href="https://github.com/adwaithrenjith" target="_blank">GitHub ↗</a>
-<a href="https://www.linkedin.com/in/adwaith-renjith/" target="_blank">LinkedIn ↗</a>
-<a href="mailto:adwaithr2006@gmail.com">Email ↗</a>
-</div>
-<small>Â© 2026 Adwaith Renjith</small>
-</footer>
-</div>
-<script src="script.js">
-</script>
+<body class="about-page">
+  <div class="site-shell">
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span>AR</span>Adwaith Renjith</a>
+      <button class="menu-toggle" aria-label="Open navigation">Menu</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About me</a>
+        <a href="projects.html">Projects</a>
+        <a class="nav-cta" href="mailto:adwaithr2006@gmail.com">Email <b>↗</b></a>
+      </div>
+    </nav>
+    <aside class="page-toc" aria-label="About page sections">
+      <span>On this page</span>
+      <a href="#overview">Overview</a>
+      <a href="#education">Education</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#activities">Activities</a>
+      <a href="#skills">Skills</a>
+      <a href="#honors">Honors</a>
+    </aside>
+    <main>
+      <section class="inner-hero page-width">
+        <span class="eyebrow">02 / About</span>
+        <h1>About me</h1>
+        <p>I am an Honors Computer Science student at Oregon State University. This page covers my education, research, work, and activities.</p>
+      </section>
+
+      <section class="page-width content-grid" id="overview">
+        <div class="section-marker">01 <span>Overview</span></div>
+        <div>
+          <h2>Computer science, research, and software development.</h2>
+          <p>I am studying Computer Science with concentrations in Artificial Intelligence and Cybersecurity, plus minors in Business Administration and Finance. My main research work is on neural-network compression and parameter sharing for Kolmogorov–Arnold Networks.</p>
+          <p>Outside research, I contribute to research software, teach undergraduate engineering and computer-science students, and work on web, AI, and computer-vision projects.</p>
+        </div>
+      </section>
+
+      <section class="cv-section page-width" id="education">
+        <div class="cv-section-heading"><span class="section-marker">02 <span>Education</span></span><div><h2>Education</h2></div></div>
+        <article class="cv-entry"><span class="cv-entry-date">Sep 2024 — Jun 2028</span><div><h3>Oregon State University</h3><h4>Honors B.S. in Computer Science · Corvallis, OR</h4><p>Concentrations in Artificial Intelligence and Cybersecurity; minors in Business Administration and Finance. GPA: 4.0 / 4.0. OSU Honors College.</p></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">2022 — 2024</span><div><h3>Westview High School</h3><h4>High School Diploma · Beaverton, OR</h4><p>Graduated with a 4.64 weighted GPA and a 4.0 unweighted GPA. Westview Honors Scholar and Oregon State Seal of Biliteracy/Multiliteracy recipient.</p></div></article>
+      </section>
+
+      <section class="cv-section page-width" id="research">
+        <div class="cv-section-heading"><span class="section-marker">03 <span>Research</span></span><div><h2>Research experience</h2><p>Research on efficient machine learning and model compression at OSU's STAR Lab.</p></div></div>
+        <article class="cv-entry"><span class="cv-entry-date">Nov 2024 — Present</span><div><h3>Undergraduate Researcher · STAR Lab, Oregon State University</h3><h4>Corvallis, OR</h4><ul><li>Research neural-network compression, parameter sharing, differentiable clustering, and Kolmogorov–Arnold Networks.</li><li>Built and extended the MetaCluster research codebase, including experimental scripts, compression methods, model reconstruction, and reproducible workflows.</li><li>Run multi-seed experiments and hyperparameter sweeps on local NVIDIA GPUs and OSU HPC systems using Slurm.</li><li>Implemented K-Means, K-Medoids, differentiable K-Means, spectral clustering, custom functional distances, compact cluster-ID packing, Huffman encoding, and Safetensors serialization.</li><li>Reported up to 80× parameter-storage reduction on image-classification KAN models without accuracy loss and up to 124.1× parameter reduction on equation-modeling tasks.</li></ul></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">2025 — Present</span><div><h3>MetaCluster</h3><h4>Research project and publication</h4><p>Co-first author on <a class="arrow-link" href="https://arxiv.org/abs/2510.19105" target="_blank" rel="noreferrer">MetaCluster: Enabling Deep Compression of Kolmogorov–Arnold Network ↗</a>, arXiv:2510.19105. The paper was submitted to NeurIPS 2026.</p></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">Spring 2025</span><div><h3>OSU Spring Poster Symposium</h3><p>Presented “A Clustering-Based Approach for Parameter Sharing in Kolmogorov–Arnold Transformers.”</p></div></article>
+      </section>
+
+      <section class="cv-section page-width" id="experience">
+        <div class="cv-section-heading"><span class="section-marker">04 <span>Work</span></span><div><h2>Work and teaching experience</h2></div></div>
+        <article class="cv-entry"><span class="cv-entry-date">Aug 2026 — Present</span><div><h3>Research Software Developer · OSU College of Earth, Ocean, and Atmospheric Sciences</h3><h4>Corvallis, OR</h4><p>Contribute to <a class="arrow-link" href="https://github.com/sullichrosu/Njobvu-AI" target="_blank" rel="noreferrer">Njobvu-AI ↗</a>, an open-source collaborative image-labeling and computer-vision project. My work includes debugging, implementation, pull requests, Docker configuration, and maintainability improvements across a Node.js/Express codebase.</p></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">Mar 2026 — Present</span><div><h3>Lead Undergraduate Learning Assistant / Undergraduate Learning Assistant · OSU College of Engineering</h3><h4>Corvallis, OR</h4><p>Led ENGR 103 Python and computational-thinking labs, supported ENGR 102 Ecampus students through grading and online help, and was selected as a Lead ULA to mentor other undergraduate learning assistants.</p></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">Mar 2026 — Present</span><div><h3>Undergraduate Learning Assistant · OSU School of Electrical Engineering and Computer Science</h3><h4>Corvallis, OR</h4><p>Support CS 261 Data Structures through lab instruction, office hours, grading, code reviews, and one-on-one mentoring. Topics include linked lists, recursion, sorting, time complexity, and debugging.</p></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">Jun 2025 — Sep 2025</span><div><h3>Developer Intern · BeaverHacks</h3><h4>Corvallis, OR</h4><p>Contributed frontend work to BeaverHacks Next using React, TypeScript, and Next.js, including file-selection interfaces for application proposals and supporting media.</p></div></article>
+      </section>
+
+      <section class="cv-section page-width" id="leadership">
+        <div class="cv-section-heading"><span class="section-marker">05 <span>Leadership</span></span><div><h2>Leadership and involvement</h2></div></div>
+        <article class="cv-entry"><span class="cv-entry-date">2025 — Present</span><div><h3>Honors College Student Association</h3><h4>Community Engagement Chair · Previously Vice Chair of Professional Development</h4><p>Lead community-engagement initiatives and student activities within the Honors College.</p></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">2026 — Present</span><div><h3>Engineers in Action</h3><h4>Treasurer</h4><p>Manage budgeting, funding requests, and financial coordination.</p></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">2026 — Present</span><div><h3>AI Club, Oregon State University</h3><h4>Events Lead / Event Coordinator</h4><p>Coordinate technical and community events focused on artificial intelligence and machine learning.</p></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">2025 — Present</span><div><h3>Product Management Club, Oregon State University</h3><h4>Vice President · Previously Finance Chair</h4><p>Support organizational planning, member engagement, and product-management programming.</p></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">2026 — Present</span><div><h3>Conservation Club, Oregon State University</h3><h4>Social Media Manager</h4><p>Manage digital outreach and social-media communication for club activities.</p></div></article>
+      </section>
+
+      <section class="cv-section page-width" id="activities">
+        <div class="cv-section-heading"><span class="section-marker">06 <span>Activities</span></span><div><h2>Additional experience</h2></div></div>
+        <article class="cv-entry"><span class="cv-entry-date">Cybersecurity</span><div><h3>picoCTF · Carnegie Mellon University</h3><h4>Team Lead and Competitor</h4><p>Led a cybersecurity team in digital forensics, reverse engineering, cryptography, binary exploitation, and security-analysis challenges. Achieved a global Top 200 ranking and 4th place nationally in the school-students-only ranking.</p></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">Mentorship</span><div><h3>OHSU Science Ambassadors & THPRD RISE</h3><h4>STEM Mentor and Youth Leader</h4><p>Completed 120+ hours of STEM mentorship and youth-leadership work, mentoring more than 50 students.</p></div></article>
+        <article class="cv-entry"><span class="cv-entry-date">Competition</span><div><h3>Abacus and Mental Arithmetic</h3><h4>International Competitor</h4><p>Represented India in Singapore, earning 2nd and 3rd prizes. Also won first prize three times in National Olympiads and placed at the national and international levels in the MARS Mental Math Bee.</p></div></article>
+      </section>
+
+      <section class="cv-section page-width" id="skills">
+        <div class="cv-section-heading"><span class="section-marker">07 <span>Skills</span></span><div><h2>Technical skills</h2></div></div>
+        <div class="skills-list"><div><strong>Languages</strong>Python, C++, C, Java, JavaScript, TypeScript, SQL, R</div><div><strong>Web development</strong>React, Next.js, Node.js, Express, Flask, HTML/CSS, Bootstrap, Tailwind CSS</div><div><strong>Machine learning</strong>PyTorch, TensorFlow, scikit-learn, KANs, MetaKAN, computer vision, clustering, model compression, AI agents</div><div><strong>Scientific computing</strong>NumPy, SciPy, Pandas, Matplotlib, OpenCV, MediaPipe, PCA, B-splines</div><div><strong>Systems and tools</strong>Git/GitHub, Docker, Docker Compose, Slurm/HPC, CUDA, NVIDIA GPU computing, Linux, Windows, macOS</div><div><strong>Security</strong>JWT, bcrypt, CSRF, role-based access control, digital forensics, reverse engineering</div></div>
+      </section>
+
+      <section class="cv-section page-width" id="honors">
+        <div class="cv-section-heading"><span class="section-marker">08 <span>Honors</span></span><div><h2>Awards and honors</h2></div></div>
+        <div class="award-list"><div>2nd Place, BeaverHacks — C1 Best Agent Infrastructure Track</div><div>Drucilla Shepard Smith Scholastic Award</div><div>Dean's Honor List — all terms</div><div>URSA Engage, Finley Academic Excellence, EECS, and OSU Honors College Dean's scholarships</div><div>Westview Honors Scholar Award</div><div>AP Scholar with Distinction; Oregon State Seal of Biliteracy/Multiliteracy</div></div>
+      </section>
+    </main>
+    <footer class="footer page-width"><span class="brand-mark">AR</span><div class="footer-links"><a href="https://github.com/adwaithrenjith" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/adwaith-renjith/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:adwaithr2006@gmail.com">Email ↗</a></div><small>© 2026 Adwaith Renjith</small></footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
