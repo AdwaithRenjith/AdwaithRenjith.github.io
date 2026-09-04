@@ -40,3 +40,24 @@ if (all) all.innerHTML = projects.map(projectCard).join('');
 const toggle = document.querySelector('.menu-toggle');
 const links = document.querySelector('.nav-links');
 if (toggle) toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+const tocLinks = [...document.querySelectorAll('.page-toc a')];
+const tocSections = tocLinks
+  .map(link => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
+
+if (tocLinks.length && tocSections.length) {
+  const updateToc = () => {
+    let currentSection = tocSections[0];
+    tocSections.forEach(section => {
+      if (section.getBoundingClientRect().top <= 150) currentSection = section;
+    });
+
+    tocLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${currentSection.id}`);
+    });
+  };
+
+  updateToc();
+  window.addEventListener('scroll', updateToc, { passive: true });
+}
