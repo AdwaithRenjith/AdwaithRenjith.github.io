@@ -1,526 +1,116 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- SEO Meta Tags -->
-  <title>Adwaith Renjith | AI Research & Software Engineering</title>
-  <meta name="description" content="Adwaith Renjith - Honors Computer Science student at Oregon State University specializing in AI research, neural network optimization, and full-stack development." />
-  <meta name="keywords" content="Adwaith Renjith, AI Research, Machine Learning, Computer Science, Oregon State University, Neural Networks, Full-Stack Developer" />
-  <meta name="author" content="Adwaith Renjith" />
-  
-  <!-- Open Graph / Social Media Meta Tags -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://adwaithrenjith.github.io/" />
-  <meta property="og:title" content="Adwaith Renjith | AI Research & Software Engineering" />
-  <meta property="og:description" content="Honors Computer Science student at Oregon State University specializing in AI research and full-stack development." />
-  <!-- TODO: Add og:image with a professional headshot or banner image -->
-  <!-- <meta property="og:image" content="https://adwaithrenjith.github.io/images/og-image.jpg" /> -->
-  
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Adwaith Renjith | AI Research & Software Engineering" />
-  <meta name="twitter:description" content="AI Researcher & Full-Stack Engineer at Oregon State University" />
-  <!-- TODO: Add twitter:image -->
-  <!-- <meta name="twitter:image" content="https://adwaithrenjith.github.io/images/twitter-card.jpg" /> -->
-  
-  <!-- Favicon -->
-  <!-- TODO: Add favicon.ico file to root directory -->
-  <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico"> -->
-  
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- html2pdf library for CV download -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adwaith Renjith — AI Researcher & Engineer</title>
+<meta name="description" content="Portfolio of Adwaith Renjith, an AI researcher and full-stack engineer at Oregon State University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<!-- Loading Screen -->
-<div class="loading-screen" id="loadingScreen">
-  <div class="loader">
-    <div class="loader-circle"></div>
-    <div class="loader-text">Loading...</div>
-  </div>
+<div class="site-shell">
+<nav class="navbar">
+<a class="brand" href="index.html">
+<span>AR</span> Adwaith Renjith</a>
+<button class="menu-toggle" aria-label="Open navigation">Menu</button>
+<div class="nav-links">
+<a class="active" href="index.html">Home</a>
+<a href="about.html">About me</a>
+<a href="work.html">Work & info</a>
+<a class="nav-cta" href="mailto:adwaithr2006@gmail.com">Let's talk <b>↗</b>
+</a>
 </div>
-
-<!-- Custom Cursor -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-follower" id="cursorFollower"></div>
-
-<!-- Navigation Bar -->
-<nav class="navbar" id="navbar">
-  <div class="nav-content">
-    <div class="nav-logo">
-      <a href="#home">AR</a>
-    </div>
-    <div class="nav-links">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#currently" class="nav-link">Current</a>
-      <a href="#research" class="nav-link">Research</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </div>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
-      <span class="theme-icon">🌙</span>
-    </button>
-    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
 </nav>
-
-<!-- Animated Background -->
-<div class="bg-animation"></div>
-
-<!-- Particle Canvas -->
-<canvas id="particleCanvas" class="particle-canvas"></canvas>
-
-<!-- HERO -->
-<header class="hero" id="home">
-  <div class="hero-content">
-    <div class="glitch-wrapper">
-      <h1 class="glitch" data-text="Adwaith Renjith">Adwaith Renjith</h1>
-    </div>
-    <p class="subtitle">
-      <span class="highlight">Honors Computer Science Student</span> · AI Researcher · Full-Stack Engineer
-    </p>
-    <p class="hero-desc">
-      Researching efficient neural networks and building scalable, real-world systems
-      at Oregon State University.
-    </p>
-    <div class="links">
-      <!-- Social Links Row -->
-      <div class="links-row social-row">
-        <a href="https://github.com/adwaithrenjith" target="_blank" class="social-link">
-          <span class="link-text">GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/adwaith-renjith/" target="_blank" class="social-link">
-          <span class="link-text">LinkedIn</span>
-        </a>
-        <a href="mailto:adwaithr2006@gmail.com" target="_blank" class="social-link">
-          <span class="link-text">Email</span>
-        </a>
-      </div>
-      
-      <!-- Documents Row -->
-      <!-- <div class="links-row documents-row">
-        <button class="cv-download-btn" id="cvDownloadBtn" aria-label="Download CV as PDF" title="Download CV as PDF">
-          <span class="cv-icon">📄</span>
-          <span class="cv-text">Download full CV</span>
-        </button>
-        <a href="./src/documents/Adwaith_Renjith_Resume.pdf" target="_blank" class="resume-link-btn" title="View Resume on GitHub">
-          <span class="resume-icon">📋</span>
-          <span class="resume-text">View Resume</span>
-        </a>
-      </div> -->
-    </div>
-  </div>
-  <div class="scroll-indicator">
-    <div class="scroll-arrow">↓</div>
-  </div>
-</header>
-
-<!-- ABOUT -->
-<section class="about-section" id="about">
-  <h2><span class="section-number">01.</span> About</h2>
-  <div class="about-content">
-    <div class="glass-card">
-      <p>
-        I'm an Honors Computer Science student at <span class="highlight-text">Oregon State University</span> (GPA: 4.0),
-        with minors in Business Administration and Finance. I work as a Research Assistant
-        at OSU's STAR Lab, where I focus on improving the efficiency and parameter
-        optimization of large neural networks, including Kolmogorov-Arnold Networks
-        and Transformers.
-      </p>
-      <p>
-        My interests sit at the intersection of <span class="highlight-text">machine learning research</span>, systems
-        optimization, and <span class="highlight-text">full-stack software engineering</span>.
-      </p>
-    </div>
-  </div>
+<main>
+<section class="hero page-width">
+<div class="hero-copy">
+<p class="eyebrow">
+<i>
+</i> Available for meaningful work</p>
+<h1>Building useful things at the edge of <em>intelligence.</em>
+</h1>
+<p class="lede">I'm Adwaith, an Honors Computer Science student and AI researcher who turns hard technical problems into thoughtful, usable systems.</p>
+<div class="hero-actions">
+<a class="button button-primary" href="work.html">Explore my work <span>↗</span>
+</a>
+<a class="text-link" href="about.html">A little more about me <span>↗</span>
+</a>
+</div>
+</div>
+<div class="hero-visual">
+<div class="orbit orbit-one">
+</div>
+<div class="orbit orbit-two">
+</div>
+<div class="monogram">AR<span>01</span>
+</div>
+<div class="visual-caption">
+<span>Currently</span>
+<strong>Researching efficient<br>neural networks</strong>
+</div>
+</div>
 </section>
-
-<!-- CURRENTLY WORKING ON -->
-<section id="currently">
-  <h2><span class="section-number">02.</span> What I'm Currently Doing?</h2>
-  <div class="currently-grid">
-    <div class="currently-card">
-      <div class="currently-pulse"></div>
-      <h4>Research Project</h4>
-      <p>Exploring novel compression techniques for transformer models</p>
-    </div>
-    
-    <div class="currently-card">
-      <div class="currently-pulse"></div>
-      <h4>Teaching</h4>
-      <p>Assisting as a teaching assistant for Data Structures</p>
-    </div>
-    
-  </div>
+<section class="strip page-width">
+<div>
+<span class="label">01 / Focus</span>
+<strong>AI research</strong>
+</div>
+<div>
+<span class="label">02 / Based in</span>
+<strong>Corvallis, Oregon</strong>
+</div>
+<div>
+<span class="label">03 / Studying</span>
+<strong>Computer Science @ OSU</strong>
+</div>
+<div>
+<span class="label">04 / Open to</span>
+<strong>Collaborations</strong>
+</div>
 </section>
-
-<!-- RESEARCH -->
-<section id="research">
-  <h2><span class="section-number">03.</span> Research</h2>
-
-  <div class="card featured-card">
-    <div class="card-badge">Featured</div>
-    <h3>MetaCluster: Deep Compression of Kolmogorov-Arnold Networks</h3>
-    <span class="meta"><span class="tag">STAR Lab</span> <span class="tag">2025</span> <span class="tag">ICLR 2026 Submission</span></span>
-    <ul>
-      <li>Proposed clustering-based parameter sharing for KAN MetaNet weights</li>
-      <li>Applied K-Means clustering using PyTorch and scikit-learn</li>
-      <li>Achieved up to <strong class="highlight-text">80× parameter storage reduction</strong> with no accuracy loss</li>
-      <li>Implemented and evaluated in an HPC environment</li>
-    </ul>
-    <a href="https://arxiv.org/abs/2510.19105" target="_blank" class="card-link">View arXiv &rarr;</a>
-  </div>
-
-  <div class="card">
-    <h3>Clustering Activation Functions in KAN Transformers</h3>
-    <span class="meta"><span class="tag">Poster Presentation</span> <span class="tag">Spring 2025</span></span>
-    <ul>
-      <li>Designed a novel distance metric for activation function similarity</li>
-      <li>Benchmarked K-Means and K-Medoids clustering methods</li>
-      <li>Visualized results using Pandas, NumPy, and Matplotlib</li>
-    </ul>
-  </div>
+<section class="intro-section page-width">
+<div class="section-marker">01 <span>Snapshot</span>
+</div>
+<div>
+<h2>A curious mind for complex systems.</h2>
+<p class="large-copy">My work lives where machine learning research meets product-minded engineering. At OSU's STAR Lab, I explore how neural networks can become smaller, faster, and more practical—then I bring that same care to the software I build.</p>
+<a class="arrow-link" href="about.html">Read my story <span>↗</span>
+</a>
+</div>
 </section>
-
-<!-- PROJECTS -->
-<section class="projects-section" id="projects">
-  <h2><span class="section-number">04.</span> Projects</h2>
-
-  <div class="projects-grid">
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Cortex</h3>
-        <div class="project-icon">🧭</div>
-      </div>
-      <p class="project-description">Autonomous closed-loop AI system (observe → reason → act → verify). Engineered a production‑deployed closed‑loop agent that unified GitHub, logs, analytics, Discord, and documentation into a real‑time decision pipeline. Implemented a constraint‑driven "promises" framework for safe execution and automated remediation. 2nd Place, BeaverHacks (Agent Infrastructure Track).</p>
-      <div class="tech-tags">
-        <span class="tech-tag">Agents</span>
-        <span class="tech-tag">Node.js</span>
-        <span class="tech-tag">Realtime</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-header">
-        <h3>LiftLog</h3>
-        <div class="project-icon">🏋️</div>
-      </div>
-      <p class="project-description">Real‑time workout tracker built with React and TypeScript; implemented real‑time updates and persistent storage using MongoDB within an Agile Scrum team.</p>
-      <div class="tech-tags">
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">TypeScript</span>
-        <span class="tech-tag">MongoDB</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Vision Cursor</h3>
-        <div class="project-icon">👁️</div>
-      </div>
-      <p class="project-description">Computer vision gesture mouse using OpenCV and MediaPipe for finger tracking and gesture‑based click/drag interactions enabling hands‑free control.</p>
-      <div class="tech-tags">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">OpenCV</span>
-        <span class="tech-tag">MediaPipe</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-header">
-        <h3>CareSync</h3>
-        <div class="project-icon">🏥</div>
-      </div>
-      <p class="project-description">Family health tracker with prescription and appointment tracking, medicine‑stock monitoring, and smart refill/visit alerts secured by JWT authentication.</p>
-      <div class="tech-tags">
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">Node.js</span>
-        <span class="tech-tag">SQLite</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-header">
-        <h3>AI Quiz App</h3>
-        <div class="project-icon">🧠</div>
-      </div>
-      <p class="project-description">24‑hour hackathon quiz app that integrates Gemini API and Groq SDK to generate and validate math questions in real time.</p>
-      <div class="tech-tags">
-        <span class="tech-tag">Node.js</span>
-        <span class="tech-tag">Gemini API</span>
-        <span class="tech-tag">Groq SDK</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-header">
-        <h3>DocuVault</h3>
-        <div class="project-icon">🔐</div>
-      </div>
-      <p class="project-description">Household document storage system with role‑based access, bcrypt hashing, CSRF protection, and secure file handling.</p>
-      <div class="tech-tags">
-        <span class="tech-tag">Flask</span>
-        <span class="tech-tag">SQLite</span>
-        <span class="tech-tag">Security</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-header">
-        <h3>FinTrack</h3>
-        <div class="project-icon">💰</div>
-      </div>
-      <p class="project-description">Personal expense tracker with categorization and visualization built using Python, Flask, SQLite, and Bootstrap.</p>
-      <div class="tech-tags">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">Flask</span>
-        <span class="tech-tag">SQLite</span>
-      </div>
-    </div>
-  </div>
+<section class="feature-section page-width">
+<div class="section-heading">
+<div>
+<span class="section-marker">02 <span>Featured work</span>
+</span>
+<h2>Selected projects</h2>
+</div>
+<a class="arrow-link" href="work.html">View all work <span>↗</span>
+</a>
+</div>
+<div id="featured-projects" class="project-grid">
+</div>
 </section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <h2><span class="section-number">05.</span> Skills</h2>
-
-  <div class="skills-grid">
-    <div class="skill-category">
-      <div class="skill-icon">⚡</div>
-      <h4>Languages</h4>
-      <div class="skill-tags">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">C++</span>
-        <span class="skill-tag">C</span>
-        <span class="skill-tag">Java</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">TypeScript</span>
-        <span class="skill-tag">R</span>
-      </div>
-    </div>
-    <div class="skill-category">
-      <div class="skill-icon">🌐</div>
-      <h4>Web & Backend</h4>
-      <div class="skill-tags">
-        <span class="skill-tag">React</span>
-        <span class="skill-tag">Next.js</span>
-        <span class="skill-tag">Node.js</span>
-        <span class="skill-tag">Express</span>
-        <span class="skill-tag">Flask</span>
-        <span class="skill-tag">HTML</span>
-        <span class="skill-tag">CSS</span>
-      </div>
-    </div>
-    <div class="skill-category">
-      <div class="skill-icon">🤖</div>
-      <h4>AI / ML</h4>
-      <div class="skill-tags">
-        <span class="skill-tag">PyTorch</span>
-        <span class="skill-tag">scikit-learn</span>
-        <span class="skill-tag">Computer Vision</span>
-        <span class="skill-tag">safetensors</span>
-      </div>
-    </div>
-    <div class="skill-category">
-      <div class="skill-icon">⚙️</div>
-      <h4>Systems</h4>
-      <div class="skill-tags">
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">Git/GitHub</span>
-        <span class="skill-tag">HPC</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <h2><span class="section-number">06.</span> Leadership & Experience</h2>
-  <div class="experience-grid">
-    <div class="experience-item">
-      <div class="experience-icon">🔬</div>
-      <strong>Research Assistant</strong>
-      <div class="experience-meta">STAR Lab — Oregon State University <span class="experience-date">(Nov 2024 – Present)</span></div>
-      <ul class="experience-bullets">
-        <li>Conducting research on LLM efficiency and parameter compression using Python, PyTorch, scikit-learn, and TensorFlow.</li>
-        <li>Developed clustering-based techniques for parameter sharing and evaluated model performance using quantitative and qualitative metrics.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <div class="experience-icon">🧑‍🏫</div>
-      <strong>Undergraduate Learning Assistant (EECS & ENGR)</strong>
-      <div class="experience-meta">Oregon State University <span class="experience-date">(Mar 2026 – Present)</span></div>
-      <ul class="experience-bullets">
-        <li>Supported instruction for CS 261 and ENGR 103 via office hours and lab guidance.</li>
-        <li>Mentored students in C/C++/Python on algorithm development, debugging, and code review.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <div class="experience-icon">💼</div>
-      <strong>Finance Chair</strong>
-      <div class="experience-meta">Product Management Club — Oregon State University <span class="experience-date">(Jun 2025 – Present)</span></div>
-      <ul class="experience-bullets">
-        <li>Managed budgeting, fund allocation, and sponsorship acquisition to support club events.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <div class="experience-icon">🎤</div>
-      <strong>Vice Chair, Professional Development</strong>
-      <div class="experience-meta">Honors College Student Association <span class="experience-date">(Oct 2025 – Present)</span></div>
-      <ul class="experience-bullets">
-        <li>Planned and organized professional development events for Honors College students.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <div class="experience-icon">💻</div>
-      <strong>Developer Intern</strong>
-      <div class="experience-meta">BeaverHacks <span class="experience-date">(Jun 2025 – Sep 2025)</span></div>
-      <ul class="experience-bullets">
-        <li>Built a full-stack web app for hackathon registration using Next.js, Tailwind CSS, and Prisma with real-time updates and authentication.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- AWARDS & ACHIEVEMENTS -->
-<section id="achievements">
-  <h2><span class="section-number">07.</span> Awards & Achievements</h2>
-  <div class="achievements-grid">
-
-    <div class="achievement-card">
-      <div class="achievement-icon">🏆</div>
-      <h4>Dean's List</h4>
-      <p>Oregon State University</p>
-      <span class="achievement-year">2023 - Present</span>
-    </div>
-    
-  </div>
-</section>
-
-<!-- GITHUB ACTIVITY -->
-<section id="github-activity">
-  <h2><span class="section-number">08.</span> GitHub Activity</h2>
-  <div class="github-stats">    
-    <div class="github-card glass-card">
-      <h4>GitHub Stats</h4>
-      <img src="https://ghchart.rshah.org/adwaithrenjith" alt="GitHub Contribution Chart" />
-      <p class="github-link">
-        <a href="https://github.com/adwaithrenjith" target="_blank" class="card-link">View Full Profile &rarr;</a>
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <h2><span class="section-number">09.</span> Testimonials</h2>
-  <div class="testimonials-slider">
-    <!-- TODO: Add testimonials from professors, mentors, or colleagues -->
-    <!-- <div class="testimonial-card">
-      <div class="testimonial-content">
-        <p>"Quote from professor/mentor about your work"</p>
-      </div>
-      <div class="testimonial-author">
-        <strong>Name</strong>
-        <span>Title, Organization</span>
-      </div>
-    </div> -->
-    
-    <!-- <div class="testimonial-card">
-      <div class="testimonial-content">
-        <p>"Another testimonial"</p>
-      </div>
-      <div class="testimonial-author">
-        <strong>Name</strong>
-        <span>Title, Organization</span>
-      </div>
-    </div> -->
-    
-    <div class="testimonial-placeholder">
-      <p>Testimonials coming soon...</p>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT FORM -->
-<section id="contact">
-  <h2><span class="section-number">10.</span> Get In Touch</h2>
-  <div class="contact-content">
-    <div class="contact-intro">
-      <p>
-        I'm always open to discussing new opportunities, collaborations, or just connecting
-        with fellow developers and researchers. Feel free to reach out!
-      </p>
-    </div>
-    
-    <form class="contact-form" id="contactForm">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required placeholder="Your Name">
-      </div>
-      
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="your@email.com">
-      </div>
-      
-      <div class="form-group">
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
-      </div>
-      
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required placeholder="Your message..." rows="5"></textarea>
-      </div>
-      
-      <button type="submit" class="submit-btn">
-        <span>Send Message</span>
-        <span class="btn-arrow">→</span>
-      </button>
-      
-      <div class="form-status" id="formStatus"></div>
-    </form>
-    
-    <!-- TODO: Set up form handling - Options:
-         1. Use a service like Formspree (https://formspree.io/)
-         2. Use Netlify Forms if hosting on Netlify
-         3. Set up your own backend endpoint
-         Update the form action in script.js accordingly
-    -->
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-content">
-    <p>&copy; 2026 Adwaith Renjith. Built with passion and curiosity.</p>
-    <div class="footer-links">
-      <a href="https://github.com/adwaithrenjith" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/adwaith-renjith/" target="_blank">LinkedIn</a>
-      <a href="mailto:adwaithr2006@gmail.com">Email</a>
-    </div>
-  </div>
+</main>
+<footer class="footer page-width">
+<div>
+<span class="brand-mark">AR</span>
+<p>Researching. Building. Learning.</p>
+</div>
+<div class="footer-links">
+<a href="https://github.com/adwaithrenjith" target="_blank" rel="noreferrer">GitHub ↗</a>
+<a href="https://www.linkedin.com/in/adwaith-renjith/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+<a href="mailto:adwaithr2006@gmail.com">Email ↗</a>
+</div>
+<small>Â© 2026 Adwaith Renjith</small>
 </footer>
-
-<!-- JavaScript -->
-<script src="script.js"></script>
-
+</div>
+<script src="script.js">
+</script>
 </body>
 </html>
+
+
