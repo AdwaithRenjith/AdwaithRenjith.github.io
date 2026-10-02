@@ -172,6 +172,29 @@ a {
   font-size: 16px;
 }
 
+.paper-note {
+  width: fit-content;
+  max-width: 100%;
+  margin: 20px 0 0;
+  padding: 8px 10px;
+  border-left: 2px solid var(--accent);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 13px;
+}
+
+.paper-note span {
+  margin-right: 7px;
+  color: var(--accent);
+  font: 500 10px 'DM Mono', monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.paper-note a:hover {
+  color: var(--accent);
+}
+
 .hero-actions {
   display: flex;
   align-items: center;
